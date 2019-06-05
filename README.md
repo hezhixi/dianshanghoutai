@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # itcastpro
 
 ## Project setup
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# dianshanghoutai
+>>>>>>> a9475a8031afdb46866fe159b6a967dbbd28425e
