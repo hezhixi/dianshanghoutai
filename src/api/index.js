@@ -27,8 +27,31 @@ export const login = (obj) => {
       return result.data
     })
 }
+// 获取数据展示
 export const getUserList = (ob) => {
   return axios.get('users', { params: ob })
+    .then((result) => {
+      return result.data
+    })
+}
+// 获取编辑数据
+export const editGetData = (obj) => {
+  return axios.put(`users/${obj.id}`, obj)
+    .then((result) => {
+      return result.data
+    })
+}
+// 获取删除数据
+export const delGetDate = (id) => {
+  return axios.delete(`users/${id}`)
+    .then((result) => {
+      console.log(result)
+      return result.data
+    })
+}
+// 获取修改用户状态信息
+export const getUserState = (id, type) => {
+  return axios.put(`users/${id}/state/${type}`)
     .then((result) => {
       return result.data
     })
